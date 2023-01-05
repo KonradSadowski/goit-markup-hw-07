@@ -41,11 +41,6 @@ header {
   align-items: center;
   padding: 24px 0 25px;
 }
-.header-wrapper nav {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -56,11 +51,14 @@ header {
   letter-spacing: 0.03em;
   width: fit-content;
 }
-.studio-black {
+.logo--black {
   color: var(--logo-black);
 }
-
-.menu-list {
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav__list {
   list-style: none;
   margin: 0;
   display: flex;
@@ -69,7 +67,7 @@ header {
   gap: 46px;
   padding-left: 93px;
 }
-.nav-item {
+.header-nav__item {
   text-decoration: none;
   position: relative;
   font-weight: 500;
@@ -81,11 +79,27 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.active {
+.header-nav__item:hover,
+.header-nav__item:focus {
+  color: var(--light-blue);
+}
+.header-nav__item:hover::after,
+.header-nav__item:focus::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 46px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--light-blue);
+  border-radius: 2px;
+}
+.header-nav__item--active {
   color: var(--light-blue);
   position: relative;
+  text-decoration: none;
 }
-.active::after {
+.header-nav__item--active::after {
   content: '';
   position: absolute;
   display: block;
@@ -95,30 +109,18 @@ header {
   background-color: var(--light-blue);
   border-radius: 2px;
 }
-
-.nav-item:hover,
-.nav-item:focus {
-  color: var(--light-blue);
-}
-
-.nav-item:hover::after,
-.nav-item:focus::after {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 46px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--light-blue);
-  border-radius: 2px;
-}
-.contacts {
+.header-contacts {
   display: flex;
   gap: 50px;
   padding-right: 12px;
   padding-top: 1px;
 }
-.contacts a {
+.header-contacts :hover,
+.header-contacts :focus {
+  color: var(--light-blue);
+  fill: var(--light-blue);
+}
+.header-contacts__item {
   text-decoration: none;
   color: var(--text-grey);
   font-weight: 500;
@@ -128,14 +130,9 @@ header {
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts svg {
+.header-contacts__icon {
   margin-right: 10px;
   vertical-align: middle;
-}
-.contacts :hover,
-.contacts :focus {
-  color: var(--light-blue);
-  fill: var(--light-blue);
 }
 
 /* Header-END----------------------------------------------------------------------------------------------- */
