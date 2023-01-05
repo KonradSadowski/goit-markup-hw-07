@@ -147,7 +147,7 @@ svg {
   background-repeat: no-repeat;
 }
 
-.offer_content {
+.offer__content {
   padding: 200px 0px;
   justify-content: center;
   display: flex;
@@ -155,7 +155,7 @@ svg {
   align-items: center;
 }
 
-.offer_content-item {
+.offer__content-item {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -167,7 +167,7 @@ svg {
   padding-bottom: 30px;
 }
 
-.offer_content-button {
+.offer__content-button {
   background: var(--light-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
