@@ -53,11 +53,9 @@
     </header>
     <main>
       <section class="offer">
-        <div class="container">
-          <div class="offer__content">
-            <h1 class="offer__content-item">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="offer__content-button" type="button" data-modal-open>Zamów usługe</button>
-          </div>
+        <div class="container offer__content">
+          <h1 class="offer__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button class="offer__button" type="button" data-modal-open>Zamów usługe</button>
         </div>
       </section>
       <section class="section">
@@ -295,41 +293,39 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
-          <div class="our-customers">
-            <h3 class="our-customers__header">Nasi klienci</h3>
-            <div class="our-customers__logo">
-              <a class="our-customers__logo-item" href="#">
-                <svg width="106" height="64.04">
-                  <use href="./images/icons.svg#icon-client-1"></use>
-                </svg>
-              </a>
-              <a class="our-customers__logo-item" href="#">
-                <svg width="106" height="64.04">
-                  <use href="./images/icons.svg#icon-client-2"></use>
-                </svg>
-              </a>
-              <a class="our-customers__logo-item" href="#">
-                <svg width="106" height="64.04">
-                  <use href="./images/icons.svg#icon-client-3"></use>
-                </svg>
-              </a>
-              <a  class="our-customers__logo-item"href="#">
-                <svg width="106" height="64.04">
-                  <use href="./images/icons.svg#icon-client-4"></use>
-                </svg>
-              </a>
-              <a class="our-customers__logo-item" href="#">
-                <svg width="106" height="64.04">
-                  <use href="./images/icons.svg#icon-client-5"></use>
-                </svg>
-              </a>
-              <a class="our-customers__logo-item" href="#">
-                <svg width="106" height="64.04">
-                  <use href="./images/icons.svg#icon-client-6"></use>
-                </svg>
-              </a>
-            </div>
+        <div class="container our-customers">
+          <h3 class="our-customers__header">Nasi klienci</h3>
+          <div class="our-customers__logo">
+            <a class="our-customers__logo-item" href="#">
+              <svg width="106" height="64.04">
+                <use href="./images/icons.svg#icon-client-1"></use>
+              </svg>
+            </a>
+            <a class="our-customers__logo-item" href="#">
+              <svg width="106" height="64.04">
+                <use href="./images/icons.svg#icon-client-2"></use>
+              </svg>
+            </a>
+            <a class="our-customers__logo-item" href="#">
+              <svg width="106" height="64.04">
+                <use href="./images/icons.svg#icon-client-3"></use>
+              </svg>
+            </a>
+            <a class="our-customers__logo-item" href="#">
+              <svg width="106" height="64.04">
+                <use href="./images/icons.svg#icon-client-4"></use>
+              </svg>
+            </a>
+            <a class="our-customers__logo-item" href="#">
+              <svg width="106" height="64.04">
+                <use href="./images/icons.svg#icon-client-5"></use>
+              </svg>
+            </a>
+            <a class="our-customers__logo-item" href="#">
+              <svg width="106" height="64.04">
+                <use href="./images/icons.svg#icon-client-6"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -373,17 +369,17 @@
           </div>
           <form class="footer__form">
             <label class="footer__form-label" for="user_email">Zapisz się do newslettera</label>
-            <div class="footer__form-clicable">
+            <div class="footer__form-clickable">
               <input
-                class="footer__form-clicable-input"
+                class="footer__form-clickable-input"
                 type="email"
                 name="email"
                 id="user_email"
                 placeholder="E-mail"
               />
-              <button class="footer__form-clicable-button" type="submit">
+              <button class="footer__form-clickable-button" type="submit">
                 Zapisz się
-                <svg class="footer__form-clicable-button-svg" width="24" height="24">
+                <svg class="footer__form-clickable-button-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
@@ -393,9 +389,9 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal__content">
-        <button class="modal__content-close-button" data-modal-close>&times;</button>
-        <p class="modal__content-header">Zostaw swoje dane w formularzu poniżej</p>
+      <div class="modal">
+        <button class="modal__close-button" data-modal-close>&times;</button>
+        <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>
         <form class="modal__form">
           <div class="modal__form-section" role="group" aria-labelledby="name-details">
             <label for="first-name">Imię</label>
